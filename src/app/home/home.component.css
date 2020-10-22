@@ -1,0 +1,29 @@
+.box1 {
+    grid-area: myArea;
+  }
+.main{
+    margin: 0;
+    background-color: #00b8d4;
+    padding: 20px;
+    display: grid;
+    grid-template:
+    '. . myArea myArea'
+    '. . myArea myArea';
+    grid-gap: 20px;
+}
+.box,.box1{
+padding: 0 5px;
+    background-color: black;
+    color: #ff7043;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    padding: 10px;
+}
+p{
+    
+    text-align: center;
+}

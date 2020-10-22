@@ -1,0 +1,115 @@
+.header{
+    background-image: url(/assets/background1.jpg);
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+   float: right;
+}
+ul li{
+    display: inline-block;
+    padding-right: 15px;
+}
+ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgb(242, 242, 242,.7);
+    transition: 0.5s;
+    color: #ff7043;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 7px ;
+}
+ul li a:hover{
+    background-color: rgb(242, 242, 242,1);
+    color:#00b8d4;
+}
+.logo img{
+    padding-top: 5px;
+    float: left;
+    width: 150px;
+    height: auto;
+    background-color: rgb(242, 242, 242,.8);
+    border-radius: 10px ;
+}
+@media screen and (max-width:768px){
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color:black;
+        margin: 5px;
+    }
+     nav{
+         position: relative;
+     }
+     .hamburger{
+         position: absolute;
+         cursor: pointer;
+         right: 2%;
+         top: 50%;
+         transform: translate(-5%,30%);
+         background-color: rgb(242, 242, 242,0.6);
+         padding: 2px;
+         border-radius: 5px;
+         z-index: 5;
+     }
+     ul li a:hover{
+        background-color: #00b8d4;
+        color:#f2f2f2;
+    }
+    .nav-link{
+       margin: 0 0;
+    position: fixed;
+    background: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path:circle(100px at 90% -20%);
+        transition: all 0.5s ease-out;
+        pointer-events: none;
+        z-index: 4;
+    }
+    .nav-link.open{
+        clip-path: circle(1400px at 90% -20%);
+        -webkit-clip-path:circle(1400px at 90% -20%);
+        pointer-events: all;
+     z-index: 4;
+    }
+    .nav-link li{
+        opacity: 0;
+    }
+    .nav-link li a{
+        font-size: 25px;
+    }
+    .nav-link li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-link li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-link li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-link li:nth-child(4){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-link li.fade{
+        opacity: 1;
+    }
+    ul{
+        padding-inline-start: 0;
+    }
+   ul li a{
+       background-color: transparent;
+   }
+}

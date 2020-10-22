@@ -1,0 +1,16 @@
+*{
+    margin:0;
+}
+div{
+    background: black;
+}
+h1{
+    padding: 15px;
+    color: #ff7043;
+}
+p{
+    padding: 0 25px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    color: #f2f2f2;
+}

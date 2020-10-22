@@ -1,0 +1,21 @@
+.main{
+    margin: 0;
+}
+.main{
+    padding: 15px;
+    background-color: black;
+    display: flex;
+}
+h1{
+    color: #ff7043;
+}
+p{
+    color: whitesmoke;
+}
+img{
+
+
+    width: 150px;
+    height: auto;
+    border-radius: 1rem ;
+}
